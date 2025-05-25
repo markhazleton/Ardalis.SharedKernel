@@ -1,7 +1,9 @@
-﻿namespace Ardalis.SharedKernel.UnitTests.ValueObjectTests;
+﻿using Ardalis.SharedKernel.ValueObjects;
+
+namespace Ardalis.SharedKernel.UnitTests.ValueObjectTests;
 
 public class TestValueObject : ValueObject
-  {
+{
     public int Value { get; }
 
     public TestValueObject(int value)

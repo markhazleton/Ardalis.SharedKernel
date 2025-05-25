@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Ardalis.SharedKernel;
+namespace Ardalis.SharedKernel.Behaviors;
 
 /// <summary>
 /// Source: https://code-maze.com/cqrs-mediatr-fluentvalidation/

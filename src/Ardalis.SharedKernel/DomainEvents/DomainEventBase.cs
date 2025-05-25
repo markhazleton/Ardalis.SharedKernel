@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Ardalis.SharedKernel;
+namespace Ardalis.SharedKernel.DomainEvents;
 
 /// <summary>
 /// A base type for domain events. Depends on MediatR INotification.

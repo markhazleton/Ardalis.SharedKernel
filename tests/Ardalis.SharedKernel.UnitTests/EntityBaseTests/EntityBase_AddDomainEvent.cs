@@ -1,4 +1,6 @@
-﻿using FluentAssertions;
+﻿using Ardalis.SharedKernel.DomainEvents;
+using Ardalis.SharedKernel.Entities;
+using FluentAssertions;
 using Xunit;
 
 namespace Ardalis.SharedKernel.UnitTests.EntityBaseTests;

@@ -1,4 +1,6 @@
-﻿using FluentAssertions;
+﻿using Ardalis.SharedKernel.DomainEvents;
+using Ardalis.SharedKernel.Entities;
+using FluentAssertions;
 using MediatR;
 using Microsoft.Extensions.Logging.Abstractions;
 using Moq;

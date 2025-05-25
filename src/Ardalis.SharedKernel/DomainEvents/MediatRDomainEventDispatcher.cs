@@ -1,7 +1,8 @@
-﻿using MediatR;
+﻿using Ardalis.SharedKernel.Entities;
+using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Ardalis.SharedKernel;
+namespace Ardalis.SharedKernel.DomainEvents;
 
 public class MediatRDomainEventDispatcher : IDomainEventDispatcher
 {

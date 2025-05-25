@@ -1,4 +1,4 @@
-﻿namespace Ardalis.SharedKernel;
+﻿namespace Ardalis.SharedKernel.Entities;
 
 /// <summary>
 /// Apply this marker interface only to aggregate root entities in your domain model

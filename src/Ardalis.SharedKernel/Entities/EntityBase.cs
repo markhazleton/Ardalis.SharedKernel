@@ -1,4 +1,4 @@
-﻿namespace Ardalis.SharedKernel;
+﻿namespace Ardalis.SharedKernel.Entities;
 
 /// <summary>
 /// A base class for DDD Entities. Includes support for domain events dispatched post-persistence.

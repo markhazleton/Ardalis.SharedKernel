@@ -1,10 +1,10 @@
-﻿using System.Diagnostics;
-using System.Reflection;
-using Ardalis.GuardClauses;
+﻿using Ardalis.GuardClauses;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
+using System.Reflection;
 
-namespace Ardalis.SharedKernel;
+namespace Ardalis.SharedKernel.Behaviors;
 
 /// <summary>
 /// Adds logging for all requests in MediatR pipeline.

@@ -1,6 +1,7 @@
-﻿using Ardalis.Specification;
+﻿using Ardalis.SharedKernel.Entities;
+using Ardalis.Specification;
 
-namespace Ardalis.SharedKernel;
+namespace Ardalis.SharedKernel.Repositories;
 
 /// <summary>
 /// An abstraction for read only persistence operations, based on Ardalis.Specification.
