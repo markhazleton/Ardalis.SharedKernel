@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Target Frameworks -->
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- Package Information -->
+    <PackageId>WebSpark.SharedKernel</PackageId>
+    <Version>1.0.0</Version>
+    <Title>WebSpark Shared Kernel</Title>
+    <Description>A comprehensive collection of base classes and utilities for implementing
+      Domain-Driven Design (DDD) patterns in .NET applications. Provides essential building blocks
+      for clean architecture implementations, including entities, value objects, domain events, and
+      CQRS patterns.</Description>
+    <Summary>Essential DDD building blocks for clean architecture implementations in .NET
+      applications.</Summary>
+    <Authors>Mark Hazleton</Authors>
+    <Company>WebSpark</Company>
+    <Product>WebSpark.SharedKernel</Product>
+    <Copyright>Copyright © 2025 Mark Hazleton</Copyright>
+
+    <!-- Package Metadata -->
+    <PackageProjectUrl>https://github.com/MarkHazleton/WebSpark.SharedKernel</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MarkHazleton/WebSpark.SharedKernel</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>
+      DDD;Domain-Driven-Design;Clean-Architecture;CQRS;MediatR;Entity;ValueObject;Repository;SharedKernel</PackageTags>
+    <PackageReleaseNotes>Initial release with comprehensive DDD building blocks including entities,
+      value objects, domain events, and CQRS patterns.</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>WebSpark.png</PackageIcon>
+
+    <!-- Build Configuration -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+
+    <!-- Assembly Information -->
+    <AssemblyTitle>WebSpark.SharedKernel</AssemblyTitle>
+    <AssemblyDescription>Essential building blocks for Domain-Driven Design and Clean Architecture</AssemblyDescription>
+    <AssemblyProduct>WebSpark.SharedKernel</AssemblyProduct>
+    <AssemblyCompany>WebSpark</AssemblyCompany>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <InformationalVersion>1.0.0</InformationalVersion>
+
+    <!-- Source Link -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <!-- NuGet Package Validation -->
+    <EnablePackageValidation>true</EnablePackageValidation>
+  </PropertyGroup>
+
+  <!-- Package Dependencies -->
+  <ItemGroup>
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
+  </ItemGroup>
+
+  <!-- Package Assets -->
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="WebSpark.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <!-- Conditional Package References -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="System.ComponentModel.Annotations" />
+  </ItemGroup>
+
+</Project>

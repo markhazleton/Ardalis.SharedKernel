@@ -1,26 +1,26 @@
-# Ardalis.SharedKernel
+# WebSpark.SharedKernel
 
-[![NuGet](https://img.shields.io/nuget/v/Ardalis.SharedKernel.svg)](https://www.nuget.org/packages/Ardalis.SharedKernel/)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/Ardalis.SharedKernel.svg)](https://www.nuget.org/packages/Ardalis.SharedKernel/)
+[![NuGet](https://img.shields.io/nuget/v/WebSpark.SharedKernel.svg)](https://www.nuget.org/packages/WebSpark.SharedKernel/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/WebSpark.SharedKernel.svg)](https://www.nuget.org/packages/WebSpark.SharedKernel/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive collection of base classes and utilities for implementing Domain-Driven Design (DDD) patterns in .NET applications. This package provides essential building blocks for clean architecture implementations, including entities, value objects, domain events, and repository abstractions.
 
-## 🎯 Why Ardalis.SharedKernel?
+## 🎯 Why WebSpark.SharedKernel?
 
-Ardalis.SharedKernel simplifies the implementation of common DDD patterns by providing:
+WebSpark.SharedKernel simplifies the implementation of common DDD patterns by providing:
 
 - **Type-safe entity base classes** with support for multiple ID types
 - **Robust value object implementation** with proper equality semantics
 - **Domain event infrastructure** with MediatR integration
-- **Repository pattern abstractions** built on Ardalis.Specification
+- **Repository pattern abstractions** built on WebSpark.Specification
 - **CQRS pattern support** with command and query abstractions
 - **Comprehensive logging** for all MediatR requests
 
 ## 📦 Installation
 
 ```bash
-dotnet add package Ardalis.SharedKernel
+dotnet add package WebSpark.SharedKernel
 ```
 
 ## 🚀 Quick Start
@@ -222,7 +222,7 @@ Full repository interface for aggregate roots.
 
 **Inheritance:**
 
-- Extends `IRepositoryBase<T>` from Ardalis.Specification
+- Extends `IRepositoryBase<T>` from WebSpark.Specification
 - Constraint: `T : class, IAggregateRoot`
 
 **Available Operations:**
@@ -380,8 +380,8 @@ services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
 This package relies on these well-established libraries:
 
 - **[MediatR](https://github.com/jbogard/MediatR)** (12.5.0) - Mediator pattern implementation
-- **[Ardalis.Specification](https://github.com/ardalis/Specification)** (9.1.0) - Repository pattern with specifications
-- **[Ardalis.GuardClauses](https://github.com/ardalis/GuardClauses)** (5.0.0) - Guard clause extensions
+- **[WebSpark.Specification](https://github.com/ardalis/Specification)** (9.1.0) - Repository pattern with specifications
+- **[WebSpark.GuardClauses](https://github.com/ardalis/GuardClauses)** (5.0.0) - Guard clause extensions
 - **[Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions)** (9.0.5) - Logging abstractions
 
 ## 📋 Requirements
@@ -461,9 +461,9 @@ Special thanks to the community contributors and the teams behind MediatR, Speci
 ## 🔗 Related Projects
 
 - [Clean Architecture Solution Template](https://github.com/ardalis/cleanarchitecture)
-- [Ardalis.Specification](https://github.com/ardalis/Specification)
-- [Ardalis.GuardClauses](https://github.com/ardalis/GuardClauses)
-- [Ardalis.Result](https://github.com/ardalis/Result)
+- [WebSpark.Specification](https://github.com/ardalis/Specification)
+- [WebSpark.GuardClauses](https://github.com/ardalis/GuardClauses)
+- [WebSpark.Result](https://github.com/ardalis/Result)
 
 ---
 
